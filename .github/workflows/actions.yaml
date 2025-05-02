@@ -38,4 +38,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # Format all files before checking
+      - name: Run Prettier to format files
+        run: npx prettier --write .
+      
       - run: npm run check
