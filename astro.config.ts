@@ -23,8 +23,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   output: 'static',
-  base: '/assolutamente-inutile-blog-astro/',
-  trailingSlash: "always",
+  base: '/assolutamente-inutile-blog-astro',
   site: 'https://menteora.github.io/assolutamente-inutile-blog-astro/',
   integrations: [
     tailwind({
